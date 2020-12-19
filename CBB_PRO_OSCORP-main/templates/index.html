@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/61da0dae45.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/static/styles.css" />
+    <title>Cancer Detection App</title>
+  </head>
+  <body>
+    <form action="submit">
+      <div class="field-name1">
+        <h3 class="label-text">
+          Mean Radius
+          <span class="tooltip"
+            >Mean of distances from center to points on the perimeter
+            <br /><br />
+            Range : 6.981 to 28.11
+          </span>
+        </h3>
+        <i class="fas fa-disease fa-4x"></i>
+        <input
+          type="number"
+          class="field-one"
+          placeholder="Mean Radius"
+          required
+        />
+        <i class="fas fa-arrow-right fa-3x next"></i>
+      </div>
+
+      <div class="field-name2 innactive">
+        <h3 class="label-text">
+          Mean Texture
+          <span class="tooltip two" style="top: -120px;"
+            >Standard Deviation of gray-scale values <br /><br />
+            Range : 9.71 to 39.28
+          </span>
+        </h3>
+        <i class="fas fa-star-of-life fa-3x"></i>
+        <input
+          type="number"
+          class="field-two"
+          placeholder="Mean Texture"
+          required
+        />
+        <i class="fas fa-arrow-right fa-3x next"></i>
+      </div>
+
+      <div class="field-name3 innactive">
+        <h3 class="label-text" style="left: 15%;">
+          Mean Perimeter
+          <span class="tooltip" style="top: -120px" ;
+            >All boundary points together <br /><br />
+            Range : 43.79 to 188.5
+          </span>
+        </h3>
+        <i class="fas fa-stethoscope fa-3x"></i>
+        <input
+          type="number"
+          class="field-three"
+          placeholder="Mean Perimeter"
+          required
+        />
+        <i class="fas fa-arrow-right fa-3x next"></i>
+      </div>
+
+      <div class="field-name4 innactive">
+        <h3 class="label-text" style="left: 25%">
+          Mean Area
+          <span class="tooltip" style="top: -120px" ;
+            >Area of the Region<br /><br />
+            Range : 143.5 to 2501.0
+          </span>
+        </h3>
+        <i class="fas fa-bacteria fa-3x"></i>
+        <input
+          type="number"
+          class="field-four"
+          placeholder="Mean Area"
+          required
+        />
+        <i class="fas fa-arrow-right fa-3x next"></i>
+      </div>
+
+      <div class="field-name5 innactive">
+        <h3 class="label-text" style="left: 15%" ;>
+          Concave Points
+          <span class="tooltip" style="top: -120px" ;
+            >Number of Concave portions of the contour<br /><br />
+            Range : 0.0 to 0.201
+          </span>
+        </h3>
+        <i class="fas fa-bacterium fa-3x"></i>
+        <input
+          type="number"
+          class="field-five"
+          placeholder="Mean Concave Points"
+          required
+        />
+        <i class="fas fa-arrow-right fa-3x next"></i>
+      </div>
+      <!-- Print either benign or malignant -->
+      <div class="result"></div>
+    </form>
+    <script src="../static/app.js"></script>
+  </body>
+</html>
