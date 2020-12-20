@@ -14,7 +14,7 @@
     <title>Cancer Detection App</title>
   </head>
   <body>
-    <form action="submit">
+    <form method="post">
       <div class="field-name1">
         <h3 class="label-text">
           Mean Radius
@@ -106,7 +106,22 @@
         <i class="fas fa-arrow-right fa-3x next"></i>
       </div>
       <!-- Print either benign or malignant -->
-      <div class="result"></div>
+      <div class="field-name6 innactive">
+        <h3 class="label-text result" style="left: 15%" ;>
+          <span class="tooltip" style="top: -120px" ;></span>
+        </h3>
+      </div>
+      <div class="animation">
+    <ul class="box">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    
+  </div>
     </form>
     <script src="../static/app.js"></script>
   </body>
